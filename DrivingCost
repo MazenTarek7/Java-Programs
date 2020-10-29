@@ -1,0 +1,21 @@
+/**
+ *
+ * @author Mazen Tarek
+ */
+import java.util.*;
+import java.text.*;
+public class AssignmentSheet2_Q2_23 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        NumberFormat formatter = new DecimalFormat("#0.00");
+        System.out.println("Enter driving distance: ");
+        double distance = in.nextDouble();
+        System.out.println("Enter miles per gallon: ");
+        double milesGallon = in.nextDouble();
+        System.out.println("Enter price per gallon: ");
+        double price = in.nextDouble();
+        double total = (distance / milesGallon) * price;
+        System.out.println("Total cost of driving = $"+formatter.format(total));
+    }
+    
+}
