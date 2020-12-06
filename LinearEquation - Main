@@ -1,0 +1,26 @@
+/**
+ *
+ * Mazen Tarek - 19107442
+ */
+import java.util.*;
+public class LinearEquation_9_11 {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter values for a , b , c , d , e , f: ");
+        double a = in.nextDouble();
+        double b = in.nextDouble();
+        double c = in.nextDouble();
+        double d = in.nextDouble();
+        double e = in.nextDouble();
+        double f = in.nextDouble();
+        
+        LinearEquation linearEquation1 = new LinearEquation(a , b , c , d , e , f);
+        if (linearEquation1.isSolvable()){
+            System.out.println("X: "+linearEquation1.getX()+" and Y: "+linearEquation1.getY());
+        }
+        else
+            System.out.println("The equation has no solution");
+    }
+    
+}
